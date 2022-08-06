@@ -1,46 +1,55 @@
 // var developer;
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const Counter = () => {
-    const [count, setCount] = useState(0);
-    // console.log(developer());
+  const [count, setCount] = useState(0);
+  // console.log(developer());
 
-    // const developer = function () {
-    //     console.log("Mian Mubashir");
-    // }
-    // console.log(developer)
+  // const developer = function () {
+  //     console.log("Mian Mubashir");
+  // }
+  // console.log(developer)
 
-    // function developer(){
-    //     console.log("Mian Mubashir");
-    // }
+  // function developer(){
+  //     console.log("Mian Mubashir");
+  // }
 
-    // const obj = {
-    //     boy: "Mubashir",
-    //     job: "developer",
-    // }
+  // const obj = {
+  //     boy: "Mubashir",
+  //     job: "developer",
+  // }
 
-    // console.log(obj.boy, obj.job);
-    
-    // const { boy, job } = obj;
+  // console.log(obj.boy, obj.job);
 
-    // console.log(boy, job);
+  // const { boy, job } = obj;
 
-    // const increment = () => {
-    //     setCount(count + 1);
-    // }
+  // console.log(boy, job);
 
-    // const decrement = () => {
-    //     setCount(count - 1);
-    // }
-    
-    return(
-        <>
-        <div>{count}</div>
-        <button onClick={() => setCount(count + 1)}>Increment</button>
-        <button onClick={() => setCount(count - 1)}>Decrement</button>
-        </>
+  // const increment = () => {
+  //     setCount(count + 1);
+  // }
 
-    )
-}
+  // const decrement = () => {
+  //     setCount(count - 1);
+  // }
 
-export default Counter; 
+  return (
+    <>
+      <div style={{ backgroundColor: "pink", color: "white" }}>{count}</div>
+      <button
+        style={{ backgroundColor: "black", color: "white", border: "10px" }}
+        onClick={() => setCount(count + 1)}
+      >
+        Increment
+      </button>
+      <button
+        style={{ backgroundColor: "black", color: "white", border: "10px" }}
+        onClick={() => setCount(count - 1)}
+      >
+        Decrement
+      </button>
+    </>
+  );
+};
+
+export default Counter;
